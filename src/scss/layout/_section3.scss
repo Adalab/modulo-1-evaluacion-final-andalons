@@ -12,7 +12,7 @@
     margin: auto;
     @include desktop {
       text-align: right;
-      padding-top: 170px;
+      padding-top: 175px;
     }
     &--h2 {
       @include largeTextDark;
@@ -55,8 +55,4 @@
       height: 570px;
     }
   }
-}
-
-.btn_prueba {
-  @include buttonDark;
 }

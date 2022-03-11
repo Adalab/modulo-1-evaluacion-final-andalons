@@ -1,0 +1,7 @@
+.btn-1 {
+  @include buttonDark;
+}
+
+.btn-2 {
+  @include buttonLight;
+}
