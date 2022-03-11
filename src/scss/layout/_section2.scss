@@ -1,0 +1,20 @@
+.section2 {
+  padding: $padding-sections;
+  background-color: $background-contrast;
+  color: $textColor-light;
+  text-align: center;
+  &__img {
+    padding-bottom: 0.75rem;
+  }
+  &__h2 {
+    @include largeTextLight;
+    padding-bottom: 0.75rem;
+  }
+  &__p {
+    padding-bottom: 0.75rem;
+  }
+  &__btn {
+    @include buttonLight;
+    padding-bottom: 0.75rem;
+  }
+}
