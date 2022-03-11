@@ -7,7 +7,52 @@
 }
 
 @mixin desktop {
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1280px) {
     @content;
   }
+}
+
+// Tipos de texto
+
+@mixin largeTextDark {
+  font-family: $font-main;
+  color: $textColor-dark;
+  font-size: 1.5rem;
+  @include tablet {
+    font-size: 1.875rem;
+  }
+  @include desktop {
+    font-size: 2.25rem;
+  }
+}
+
+@mixin largeTextLight {
+  font-family: $font-main;
+  color: $textColor-light;
+  font-size: 1.5rem;
+  @include tablet {
+    font-size: 1.875rem;
+  }
+  @include desktop {
+    font-size: 2.25rem;
+  }
+}
+
+// Botones
+
+@mixin buttonDark {
+  border: 0;
+  background-color: $background-dark;
+  color: $textColor-light;
+  text-align: center;
+  padding: 12px 24px;
+}
+
+@mixin buttonLight {
+  border: 0;
+  background-color: none;
+  color: $textColor-light;
+  text-decoration: underline;
+  text-align: center;
+  padding: 12px 24px;
 }
