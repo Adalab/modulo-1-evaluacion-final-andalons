@@ -1,0 +1,48 @@
+//Estilos de la sección
+
+.section1 {
+  padding: $padding-sections;
+  color: $textColor-dark;
+  background-color: $background-light;
+  /* padding: 60px 0px; */
+  &__container {
+    &--title {
+      @include largeTextDark;
+      text-align: center;
+    }
+    &--content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-row-gap: 40px;
+      justify-items: center;
+      text-align: center;
+      @include tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+.title-uppercase {
+  text-transform: uppercase;
+  @include desktop {
+    display: block;
+  }
+}
+//Estilos de los artículos dentro de la sección (section1-article.html)
+
+.item-article {
+  max-width: 208px;
+  &__img {
+    padding-bottom: 0.75rem;
+  }
+  &__h3 {
+    font-size: 1.25rem;
+    padding-bottom: 0.75rem;
+  }
+}
