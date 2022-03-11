@@ -18,7 +18,7 @@
   font-family: $font-main;
   color: $textColor-dark;
   font-size: 1.5rem;
-  padding-bottom: 1.875em;
+  padding-bottom: 0.75rem;
   @include tablet {
     font-size: 1.875rem;
   }
@@ -31,6 +31,7 @@
   font-family: $font-main;
   color: $textColor-light;
   font-size: 1.5rem;
+  padding-bottom: 0.75rem;
   @include tablet {
     font-size: 1.875rem;
   }
@@ -44,20 +45,24 @@
 @mixin buttonDark {
   display: inline-block;
   border: 0;
+  font-weight: 600;
   background-color: $background-dark;
   color: $textColor-light;
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
   padding: 12px 24px;
+  margin: 1.25rem 0;
 }
 
 @mixin buttonLight {
   display: inline-block;
   border: 0;
+  font-weight: 600;
   background-color: none;
   color: $textColor-light;
   text-decoration: underline;
   text-align: center;
   padding: 12px 24px;
+  margin: 1.25rem 0;
 }

@@ -1,0 +1,62 @@
+.section3 {
+  background-color: $background-light;
+  display: grid;
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    height: 570px;
+  }
+  &__article {
+    padding: $padding-sections;
+    color: $textColor-dark;
+    text-align: center;
+    margin: auto;
+    @include desktop {
+      text-align: right;
+      padding-top: 170px;
+    }
+    &--h2 {
+      @include largeTextDark;
+      padding-bottom: 0.75rem;
+      @include desktop {
+        display: inline-block;
+        width: 100%;
+        max-width: 560px;
+        text-align: left;
+      }
+    }
+    &--p {
+      @include desktop {
+        display: inline-block;
+        width: 100%;
+        max-width: 560px;
+        text-align: left;
+      }
+    }
+    &--btn-container {
+      @include desktop {
+        display: inline-block;
+        width: 100%;
+        max-width: 560px;
+        text-align: left;
+      }
+    }
+  }
+
+  &__img {
+    height: 300px;
+    background-image: url(../images/creando-espacios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include tablet {
+      height: 470px;
+    }
+    @include desktop {
+      height: 570px;
+    }
+  }
+}
+
+.btn_prueba {
+  @include buttonDark;
+}

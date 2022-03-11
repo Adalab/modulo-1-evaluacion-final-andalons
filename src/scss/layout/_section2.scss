@@ -8,13 +8,9 @@
   }
   &__h2 {
     @include largeTextLight;
-    padding-bottom: 0.75rem;
   }
-  &__p {
-    padding-bottom: 0.75rem;
-  }
+
   &__btn {
     @include buttonLight;
-    padding-bottom: 0.75rem;
   }
 }
