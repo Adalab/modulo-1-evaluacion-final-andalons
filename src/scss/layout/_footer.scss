@@ -5,21 +5,24 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include tablet {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
   &__nav {
     width: 20ch;
     text-align: left;
-    margin: auto;
     padding-bottom: 2.5rem;
     &--h3 {
       font-size: 1.25rem;
+      padding-bottom: 0.25rem;
     }
   }
   &__list {
     list-style: none;
+    padding-bottom: 0.5rem;
     &--link {
       text-decoration: none;
       color: $textColor-dull;
@@ -38,4 +41,12 @@
       font-size: 1.5rem;
     }
   }
+}
+
+.arrow-link {
+  color: $textColor-dull;
+  font-size: 1.5rem;
+  position: relative;
+  left: 95%;
+  top: 95%;
 }
