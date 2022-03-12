@@ -9,7 +9,7 @@
     justify-content: flex-start;
   }
   &__nav {
-    width: 50%;
+    /* width: 50%; */
     &--menuMob {
       font-size: 1.5rem;
       color: $textColor-dark;
@@ -28,7 +28,8 @@
     }
   }
   &__logo {
-    transform: translateX(-50%);
+    position: relative;
+    top: 0;
   }
 }
 
