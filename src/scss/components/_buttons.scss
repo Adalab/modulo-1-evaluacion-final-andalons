@@ -1,7 +1,57 @@
 .btn-1 {
-  @include buttonDark;
+  display: inline-block;
+  border: 0;
+  font-weight: 600;
+  background-color: $background-dark;
+  color: $textColor-light;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin: 1.25rem 0;
+  border: 1px solid $background-dark;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover {
+    color: $textColor-dark;
+    background-color: transparent;
+  }
 }
 
 .btn-2 {
-  @include buttonLight;
+  display: inline-block;
+  border: 0;
+  font-weight: 600;
+  background-color: none;
+  color: $textColor-light;
+  text-decoration: underline;
+  text-align: center;
+  padding: 12px 24px;
+  margin: 1.25rem 0;
+  transition: color ease 1s, background-color ease 1s;
+  &:hover {
+    background-color: $background-light;
+    color: $background-contrast;
+  }
+}
+
+@keyframes top {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.arrow-link {
+  display: inline-block;
+  color: $textColor-dull;
+  font-size: 1.25rem;
+  position: relative;
+  left: 95%;
+  top: 95%;
+  &:hover {
+    animation-name: top;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+  }
 }
