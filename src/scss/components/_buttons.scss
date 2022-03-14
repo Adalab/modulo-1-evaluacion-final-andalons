@@ -42,16 +42,28 @@
     transform: rotate(360deg);
   }
 }
-.arrow-link {
-  display: inline-block;
-  color: $textColor-dull;
-  font-size: 1.25rem;
+.btn-3 {
   position: relative;
-  left: 95%;
-  top: 95%;
-  &:hover {
-    animation-name: top;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
+  width: 100%;
+  @include tablet {
+    width: auto;
+    height: 135px;
+    margin-bottom: 1.25rem;
+    left: 26px;
+  }
+  &__arrowup {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    color: $textColor-dull;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &:hover {
+      animation-name: top;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+    }
   }
 }

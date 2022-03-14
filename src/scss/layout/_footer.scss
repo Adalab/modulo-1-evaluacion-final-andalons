@@ -12,26 +12,34 @@
     }
   }
   &__nav {
+    height: 135px;
     width: 20ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
-    padding-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
     &--h3 {
       font-size: 1.25rem;
-      padding-bottom: 0.25rem;
     }
   }
   &__list {
     list-style: none;
-    padding-bottom: 0.5rem;
+
     &--link {
+      font-size: 0.875rem;
       text-decoration: none;
       color: $textColor-dull;
+      @include desktop {
+        font-size: 1rem;
+      }
     }
   }
 }
 
 .socialmedia {
   display: flex;
+  padding-top: 0.75rem;
   &__item {
     width: 35px;
     &--link {
