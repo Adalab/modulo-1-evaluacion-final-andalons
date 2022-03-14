@@ -4,7 +4,6 @@
   padding: $padding-sections;
   color: $textColor-dark;
   background-color: $background-light;
-  /* padding: 60px 0px; */
   &__container {
     &--title {
       @include largeTextDark;
