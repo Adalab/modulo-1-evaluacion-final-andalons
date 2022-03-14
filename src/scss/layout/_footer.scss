@@ -30,6 +30,10 @@
       font-size: 0.875rem;
       text-decoration: none;
       color: $textColor-dull;
+      transition: color 0.5s ease;
+      &:hover {
+        color: $textColor-light;
+      }
       @include desktop {
         font-size: 1rem;
       }
@@ -47,6 +51,10 @@
       text-decoration: none;
       color: $textColor-dull;
       font-size: 1.5rem;
+      transition: color 0.5s ease;
+      &:hover {
+        color: $textColor-light;
+      }
     }
   }
 }
