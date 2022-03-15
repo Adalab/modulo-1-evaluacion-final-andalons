@@ -1,0 +1,15 @@
+.section4 {
+  width: 100%;
+  background-color: $background-contrast;
+  &__title {
+    padding-bottom: 10px;
+  }
+  display: none;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__title {
+      grid-column: 1/3;
+    }
+  }
+}
